@@ -1,0 +1,49 @@
+
+.example {
+    display:inline-block;   
+    position:relative;
+ 
+}
+.example h1 {
+    display:inline-block;
+    position:absolute;
+    top:30px;   
+    left:0px;
+     
+    /* Оформление текста */
+    color:#FFF;
+    font-family: Roboto;
+    font-size:50px; 
+     
+    /* Фон */
+    background-color:rgba(0,0,0,4);
+    padding:10px 100px;
+}
+.example p {
+    display:inline-block;
+    position:absolute;
+    top:120px;   
+    left:0px;
+     
+    /* Оформление текста */
+    color:#FFF;
+    font-family: 'Roboto';
+    font-size:30px; 
+     
+    /* Фон */
+    background-color:rgba(0,0,0,0.4);
+    padding:10px 110px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width: 600px) {
+.flex-container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: no-wrap;
+	max-width: 100%;
+}
+
+}
