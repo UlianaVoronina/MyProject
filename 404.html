@@ -2,16 +2,45 @@
 <html>
 	<head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 		<body>
+
 		<style type="text/css">
-		h1{
+		h1,button{
 			font-size: 90px; 
 			font-family: Roboto; 
 			color: white;
+			background:0;
 			margin-left: 20px;
 			text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 		}
+		
+					.btn {
+				  display: inline-block;
+				  color: white;		  
+				  text-decoration: none;
+				  user-select: none;
+					padding:3px 30px;
+				  outline: none;
+				  border: 2px solid;
+				  border-radius: 1px;
+				  font-family: Roboto Light;
+				  font-size: 35px;
+
+				} 
+				.btn:hover { background: rgba(255,255,255,.1); }
+				.btn:active { background: white; }
+			p{
+			position:relative;
+			 color: white;	
+			 padding: 50px;
+			 font-family: Roboto Light;
+			font-size: 35px;
+			display:none;
+			 
+			}
+		
 		body{	
 				margin:0;
 				padding:0;
@@ -21,15 +50,41 @@
 				 background-size: 100%;
 				 background-color:black;
 		}
-		 html { overflow-y:  hidden; }
-		@media screen and (min-width: 500px) {
-		.flex-container{
-		display: flex;
-		max-width: 100%;
-		 background-color:black;
+		
+
+		@media screen  (max-width: 600px){
+		html{
+		overflow-y: visible;
 		}
+			h1{
+			display:flex;
+			font-size: 20px;
+			}
+		}
+	
 		</style>
-		<h1>Ой, ошибочка вышла...</h1>
-		<a href="web.html"><h1>back</h1></a>>
+		<h1>Secret page</h1>
+		<a href="web.html"><h1 class="btn">back</h1></a>
+		<button id="btn" class="btn">read more</button>
+		<p id="text">
+		Faraway - новое мобильное приложение для релаксации.
+		Насладитесь качественной графикой необитаемого острова. Используйте очки виртуальной реальности, чтобы полностью погрузиться в виртуальное пространство.
+		</p>
+						<script> 
+				 (function(){ 
+				 function switchText(){ 
+				 var btn = document.getElementById('btn'), 
+				 text = document.getElementById('text'); 
+				 if (btn.innerHTML === 'read more') { 
+				 text.style.display = 'block'; 
+				 btn.innerHTML = 'hide info'; 
+				 } else { 
+				 text.style.display = 'none'; 
+				 btn.innerHTML = 'read more'; 
+				 } 
+				 } 
+				 document.getElementById('btn').addEventListener('click', switchText, false); 
+				 })() 
+				</script>
 		</body>
 	</html>

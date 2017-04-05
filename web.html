@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html>
 	<head> 
-	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-	 <link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-		<body>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" type="text/css" media="screen "href="style.css">
+	 <script type="text/javascript" src="jquery-3.2.0.min.js"></script>
+	  <script type="text/javascript" src="jQueryRotate.js"></script>
+	 
+	</head
 	<header>
-            <div class="flex-container">
-             
-           
-           
-        </div>
-			<div class="example">
-				<img src="2.jpg" style="width: 100%; height: 100%">
+ 
+				  
+
+			<div class="example"> 
+				<img src="2.jpg" style="width: 100%; height: 100%; display:flex">
+				<img src="ship.jpg" id="rotate" style="width: 30%; height: 40%">
 				 <a href= "404.html"><h1>FARAWAY</h1></a>
                 <p>Escape from reality</p>
-			</div> </div>  
+			</div>
+		<script type="text/javascript">
+				jQuery("#rotate").rotate({ 
+				   bind: 
+					 { 
+						mouseover : function() { 
+							jQuery(this).rotate({animateTo:5})
+						},
+						mouseout : function() { 
+							jQuery(this).rotate({animateTo:0})
+						}
+					 } 
+				});
+				</script>
+				
+		
+				<div class="info" >
+					<div class="inftext"><img src="vr.png" >
+					<p>Enjoy being on and island with VR-technology</p></div>
+					<div class="inftext"><img src="free.png" style="opacity:0.9;  ">
+					<p>Unlimited using trial, pay for extended</p>
+					</div>
+					<div class="inftext"><img src="00.png" style="opacity:0.9;">
+					<p>High-quality graphics and special effects</p>
+					</div>
+				</div> 		
+								<div class="footer">
+							  <footer>
+							  <p align="right" >Powered by</p>
+							  <h2>All rights reserved</h2>
+							  <h3>Join us on</h3>
+								<img src="logo.png">
+								<div class="icons">
+									<img  class="icon" src="VK.png">
+									<img  class="icon" src="Twitter.png">
+									<img  class="icon" src="FB.png">
+								</div>
+							  </footer>
+							  
+							</div>
+			</div>  
+
+				
+			
 		</body>
 	</html>
