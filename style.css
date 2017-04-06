@@ -126,26 +126,32 @@ body {
 	margin-left:140px;
 	padding-top: 35px;
 }
-
+@media screen and (max-width: 930px){
+.info{
+	max-width:100%;
+ display: flex;
+}	
+	.info img{
+	max-height: 150px;
+	max-width:100%;
+}
+}
 @media screen and (max-width: 768px) {
 	.info img{
-	height: 150px;
-	padding-left:0px;
-	padding-top:20px;
+	height: 140px;
+	max-width:100%;
 }
 .info{
-	height: 350px;
-	background: linear-gradient(to bottom right, #0d6543, #96ea12);
-	text-align: center;
-	justify-content: space-between;
+	height: 340px;
  display: flex;
  flex-direction: row;
 
-
 }
 
 }
-@media screen and (max-width: 600px) {
+
+
+@media screen and (max-width: 610px) {
 	.example {
 		display:inline-block;   
 	position:relative;
